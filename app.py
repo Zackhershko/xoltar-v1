@@ -13,6 +13,10 @@ LOG_FILE = 'logs/clicks.csv'
 CREDENTIALS_LOG_FILE = 'logs/credentials.csv'
 REDIRECT_AFTER = '/fake-login'
 
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
 @app.get("/", response_class=HTMLResponse)
 async def index():
     return """
