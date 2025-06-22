@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Log files
+logs/ 
+set_env.bat
+set_env.ps1
